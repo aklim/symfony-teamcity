@@ -16,7 +16,7 @@ class TestController extends AbstractController
         ]);
     }
     
-    #[Route('/test', name: 'test')]
+    #[Route('/test', name: 'test2')]
     public function another(): Response
     {
         return $this->render('test/index.html.twig', [
