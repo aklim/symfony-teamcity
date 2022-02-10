@@ -1,0 +1,29 @@
+{
+  "includes": [
+    "src",
+    "public"
+  ],
+  "exclude": [
+    "tests"
+  ],
+  "report": {
+    "html": "reports/php-metrics/",
+    "csv": "reports/php-metrics.csv",
+    "json": "reports/php-metrics.json",
+    "violations": "reports/php-metrics.xml"
+  },
+  "groups": [
+    {
+      "name": "App",
+      "match": "!App!"
+    }
+  ],
+  "plugins": {
+    "git": {
+      "binary": "git"
+    }
+  },
+  "extensions": [
+    "php"
+  ]
+}

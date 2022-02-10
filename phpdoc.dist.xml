@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor
+        configVersion="3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://www.phpdoc.org"
+        xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd">
+    <title>Cyberwrite v3</title>
+    <paths>
+        <output>docs/api</output>
+        <cache>docs/cache</cache>
+    </paths>
+    <version number="1.0.0">
+        <folder>latest</folder>
+        <api>
+            <source dsn=".">
+                <path>src</path>
+                <path>public</path>
+            </source>
+            <include-source>true</include-source>
+            <markers>
+                <!--1 or more repetitions:-->
+                <marker>TODO</marker>
+                <marker>FIXME</marker>
+            </markers>
+        </api>
+        <guide>
+            <source dsn=".">
+                <!--1 or more repetitions:-->
+                <path>support/docs</path>
+            </source>
+            <!--Optional:-->
+            <output>docs</output>
+        </guide>
+    </version>
+</phpdocumentor>
