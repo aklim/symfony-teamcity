@@ -14,13 +14,4 @@ class TestControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
         $this->assertSelectorTextContains('h1', 'Hello TestController');
     }
-    
-    public function testAnother(): void
-    {
-        $client = static::createClient();
-        $crawler = $client->request('GET', '/test');
-        
-        $this->assertResponseIsSuccessful();
-        $this->assertSelectorTextContains('h1', 'Hello TestController');
-    }
 }
